@@ -7,7 +7,7 @@
                           DataContext="{Binding Source={StaticResource Locator},
                                                 Path=Second}"
                           mc:Ignorable="d">
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <Grid Background="#C8C8C8">
         <Button HorizontalAlignment="Center"
                 VerticalAlignment="Center"
                 Command="{Binding Path=GoBackCommand}"

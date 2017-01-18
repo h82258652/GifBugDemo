@@ -6,7 +6,8 @@
                     xmlns:views="using:SoftwareKobo.Views"
                     mc:Ignorable="d">
     <Grid x:Name="RootGrid">
-        <Frame x:Name="Frame" />
+        <Frame x:Name="Frame"
+               Background="#E3E3E3" />
         <ContentControl x:Name="ContentControl"
                         HorizontalContentAlignment="Stretch"
                         VerticalContentAlignment="Stretch"

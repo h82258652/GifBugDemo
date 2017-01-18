@@ -10,7 +10,7 @@
                           DataContext="{Binding Source={StaticResource Locator},
                                                 Path=Main}"
                           mc:Ignorable="d">
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="*" />
             <RowDefinition Height="Auto" />
@@ -28,7 +28,8 @@
                 <TextBlock Grid.Row="0"
                            Text="Local Gif Image"
                            TextAlignment="Center" />
-                <Image Grid.Row="1" />
+                <Image Grid.Row="1"
+                       Source="/Assets/Images/test.gif" />
             </Grid>
             <Grid Grid.Column="1">
                 <Grid.RowDefinitions>
@@ -38,7 +39,8 @@
                 <TextBlock Grid.Row="0"
                            Text="Network Gif Image"
                            TextAlignment="Center" />
-                <Image Grid.Row="1" />
+                <Image Grid.Row="1"
+                       Source="https://media.tenor.co/images/50e14e91d9d4af5a9f425d81f6147ccc/raw" />
             </Grid>
         </Grid>
         <Button Grid.Row="1"
