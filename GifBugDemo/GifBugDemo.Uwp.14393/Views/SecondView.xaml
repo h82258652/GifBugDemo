@@ -11,6 +11,6 @@
         <Button HorizontalAlignment="Center"
                 VerticalAlignment="Center"
                 Command="{Binding Path=GoBackCommand}"
-                Content="Go Back" />
+                Content="Go back" />
     </Grid>
 </views:GifBugDemoViewBase>
