@@ -1,4 +1,6 @@
-﻿using Windows.UI.Xaml;
+﻿using System;
+using System.Threading.Tasks;
+using Windows.UI.Xaml;
 
 namespace GifBugDemo.Uwp
 {
@@ -15,6 +17,12 @@ namespace GifBugDemo.Uwp
             {
                 Frame.GoBack();
             }
+        }
+
+        private async void GoBackButton_Loaded(object sender, RoutedEventArgs e)
+        {
+            await Task.Delay(TimeSpan.FromSeconds(5));
+            GoBackButton.IsEnabled = true;
         }
     }
 }

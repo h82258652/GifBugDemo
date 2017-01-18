@@ -5,9 +5,17 @@
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
       mc:Ignorable="d">
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <Button HorizontalAlignment="Center"
-                VerticalAlignment="Center"
-                Click="GoBackButton_Click"
-                Content="Go back" />
+        <StackPanel HorizontalAlignment="Center"
+                    VerticalAlignment="Center"
+                    Orientation="Vertical">
+            <TextBlock Text="This button will be enabled in 5 seconds." />
+            <Button x:Name="GoBackButton"
+                    Margin="0,4,0,0"
+                    HorizontalAlignment="Center"
+                    Click="GoBackButton_Click"
+                    Content="Go back"
+                    IsEnabled="False"
+                    Loaded="GoBackButton_Loaded" />
+        </StackPanel>
     </Grid>
 </Page>
