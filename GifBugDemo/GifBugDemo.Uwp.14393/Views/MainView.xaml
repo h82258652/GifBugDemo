@@ -9,6 +9,7 @@
                           xmlns:views="using:GifBugDemo.Uwp.Views"
                           DataContext="{Binding Source={StaticResource Locator},
                                                 Path=Main}"
+                          NavigationCacheMode="Required"
                           mc:Ignorable="d">
     <Grid>
         <Grid.RowDefinitions>
